@@ -9,7 +9,7 @@ Use this to start a web server or make HTTP requests.
 
 ## Usage
 ```glow
-import "http"
+use "http"
 
 let server = http.Server()
 server.listen(8080)
