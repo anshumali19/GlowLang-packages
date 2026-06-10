@@ -1,0 +1,8 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "author": "GlowLang Core Team",
+  "repo": "https://github.com/anshumali19/GlowLang-core",
+  "entry": "lib/database.glow",
+  "description": "The official SQLite database connector."
+}

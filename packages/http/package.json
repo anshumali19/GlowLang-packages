@@ -1,0 +1,8 @@
+{
+  "name": "http",
+  "version": "1.0.0",
+  "author": "GlowLang Core Team",
+  "repo": "https://github.com/anshumali19/GlowLang-core",
+  "entry": "lib/http.glow",
+  "description": "The official HTTP server and client package for GlowLang."
+}
