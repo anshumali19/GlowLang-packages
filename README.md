@@ -38,8 +38,14 @@ If you do not have a pre-compiled `gdu` binary, you can compile and run `gdu` ma
 git clone https://github.com/anshumali19/GlowLang-packages.git
 cd GlowLang-packages/gdu
 
+# Install build prerequisites (Debian/Ubuntu)
+sudo apt-get install -y libsqlite3-dev libssl-dev
+
 # Compile gdu
-gcc gdu.c -o gdu -O2 -lsqlite3
+#   -lsqlite3 : local package cache/registry
+#   -lcrypto  : OpenSSL SHA-256 used for package integrity (gdu verify / Glow.lock)
+gcc gdu.c -o gdu -O2 -lsqlite3 -lcrypto
+# ...or simply: make
 
 # Install the toolchain
 ./gdu install glowlang
