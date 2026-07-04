@@ -1,0 +1,53 @@
+# GlowDB — Official SQLite Database Connector for GlowLang
+# A thin, direct wrapper over the built-in `sqlite` module.
+# Built-in natives used: sqlite.open, sqlite.exec, sqlite.query, sqlite.close
+
+blueprint Database:
+    action init(path):
+        self.path = path
+        self.handle = sqlite.open(path)
+        self.connected = true
+    end
+
+    # Run a statement that returns no rows (CREATE, INSERT, UPDATE, DELETE).
+    action execute(sql):
+        return sqlite.exec(self.handle, sql)
+    end
+
+    # Run a SELECT and return the resulting rows.
+    action query(sql):
+        return sqlite.query(self.handle, sql)
+    end
+
+    # Convenience: create a table from a { column: type } schema.
+    action create_table(name, schema):
+        let sql = "CREATE TABLE IF NOT EXISTS " + name + " ("
+        let first = true
+        when type(schema) == "dict":
+            for each col in schema.keys():
+                when not first:
+                    sql = sql + ", "
+                end
+                first = false
+                sql = sql + col + " " + schema[col]
+            end
+        end
+        sql = sql + ")"
+        return sqlite.exec(self.handle, sql)
+    end
+
+    action close():
+        when self.connected:
+            sqlite.close(self.handle)
+            self.connected = false
+        end
+    end
+end
+
+# Usage:
+#   use "database.glow"
+#   let db = Database("app.db")
+#   db.create_table("users", {"name": "TEXT", "age": "INTEGER"})
+#   db.execute("INSERT INTO users (name, age) VALUES ('Anshu', 21)")
+#   let rows = db.query("SELECT * FROM users")
+#   db.close()
