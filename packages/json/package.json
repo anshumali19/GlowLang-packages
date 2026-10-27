@@ -1,0 +1,9 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "author": "Anshumali Sharma and Anamika Mukherjee",
+  "repo": "https://github.com/anshumali19/GlowLang-packages",
+  "entry": "json.glow",
+  "description": "JSON utilities: path queries, schema validation, diff, merge and pretty-printing.",
+  "license": "Apache-2.0 WITH Commons-Clause (see GlowLang-core LICENSE)"
+}

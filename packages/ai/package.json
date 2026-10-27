@@ -1,8 +1,9 @@
 {
   "name": "ai",
   "version": "1.0.0",
-  "author": "GlowLang Core Team",
-  "repo": "https://github.com/anshumali19/GlowLang-core",
-  "entry": "lib/ai.glow",
-  "description": "Machine learning extensions utilizing native SIMD Tensors."
+  "author": "Anshumali Sharma and Anamika Mukherjee",
+  "repo": "https://github.com/anshumali19/GlowLang-packages",
+  "entry": "ai.glow",
+  "description": "Neural networks for GlowLang: Layer, NeuralNet, losses, optimizers and a training loop.",
+  "license": "Apache-2.0 WITH Commons-Clause (see GlowLang-core LICENSE)"
 }

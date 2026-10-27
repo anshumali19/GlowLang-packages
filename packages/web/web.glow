@@ -1,4 +1,4 @@
-# GlowWeb — Production Web Framework for GlowLang
+# GlowWeb — Web Framework for GlowLang
 # Router, Middleware, Request/Response, JSON API, Static files
 # String methods: .split() .contains() .find() .slice()
 

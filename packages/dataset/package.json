@@ -1,0 +1,9 @@
+{
+  "name": "dataset",
+  "version": "1.0.0",
+  "author": "Anshumali Sharma and Anamika Mukherjee",
+  "repo": "https://github.com/anshumali19/GlowLang-packages",
+  "entry": "dataset.glow",
+  "description": "Load, split, shuffle, batch and transform datasets for machine-learning pipelines.",
+  "license": "Apache-2.0 WITH Commons-Clause (see GlowLang-core LICENSE)"
+}

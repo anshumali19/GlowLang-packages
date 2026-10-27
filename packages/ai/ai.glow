@@ -1,4 +1,4 @@
-# GlowAI — Production AI & Neural Network Library
+# GlowAI — AI & Neural Network Library
 # Provides: Layer, SimpleNet, NeuralNet, Optimizer, LossFunction, TrainingLoop
 # Data preprocessing: normalize, one_hot_encode
 # Model persistence: save_model, load_model

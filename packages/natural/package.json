@@ -1,0 +1,9 @@
+{
+  "name": "natural",
+  "version": "1.0.0",
+  "author": "Anshumali Sharma and Anamika Mukherjee",
+  "repo": "https://github.com/anshumali19/GlowLang-packages",
+  "entry": "natural.glow",
+  "description": "Natural-language helpers: keep, apply, even, avg, root, dist.",
+  "license": "Apache-2.0 WITH Commons-Clause (see GlowLang-core LICENSE)"
+}

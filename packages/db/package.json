@@ -1,0 +1,9 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "author": "Anshumali Sharma and Anamika Mukherjee",
+  "repo": "https://github.com/anshumali19/GlowLang-packages",
+  "entry": "db.glow",
+  "description": "Minimal SQLite model helper (Model class: create_table, insert).",
+  "license": "Apache-2.0 WITH Commons-Clause (see GlowLang-core LICENSE)"
+}

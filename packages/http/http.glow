@@ -1,4 +1,4 @@
-# GlowHTTP — High-Performance HTTP Client Library
+# GlowHTTP — HTTP Client Library
 # Provides GET, POST, PUT, DELETE with headers, timeouts, and JSON support
 
 blueprint HttpClient:
